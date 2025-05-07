@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Villatoro Accesorio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #6a11cb;
+      --secondary-color: #2575fc;
+      --dark-bg: #0f0f10;
+      --text-light: #f5f5f5;
+      --text-gray: #b0b0b0;
+      --card-bg: #1a1a1d;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    body {
+      background: var(--dark-bg);
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 800;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .hero {
+      padding: 4rem 2rem;
+      text-align: center;
+      background: radial-gradient(circle, rgba(106,17,203,0.3), rgba(37,117,252,0.1));
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: var(--text-gray);
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 3rem 2rem;
+    }
+
+    .product-card {
+      background: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 1rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+    }
+
+    .product-card img {
+      max-width: 100%;
+      border-radius: 0.5rem;
+    }
+
+    .product-card h3 {
+      margin-top: 1rem;
+      font-size: 1.5rem;
+    }
+
+    .product-card p {
+      color: var(--text-gray);
+      margin: 0.5rem 0;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.8rem 1.5rem;
+      background: var(--primary-color);
+      color: white;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 2rem;
+      color: var(--text-gray);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+<header style="display: flex; align-items: center; padding: 1rem 2rem; background: linear-gradient(to right, #6a11cb, #2575fc);">
+  <img src="C:\Users\MINEDUCYT\Downloads\yo\img\villatoro.png" alt="Logo" style="width: 60px; height: 60px; margin-right: 1rem; border-radius: 50%;" />
+
+  <h1 style="color: white; font-size: 2rem; font-weight: 800;">Villatoro Accesorio</h1>
+</header>
+
+  <header>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <h1>Villatoro Accesorio</h1>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#productos">Productos</a>
+      <a href="#contacto">Contacto</a>
+	  <a href="#Derechos">Derechos</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Accesorios que destacan tu estilo</h2>
+    <p>Fundas, cargadores, auriculares y más. Calidad premium para tu teléfono.</p>
+  </section>
+
+  <section id="productos" class="products">
+    <div class="product-card">
+      <img src="C:\Users\MINEDUCYT\Downloads\yo\img\villatoro.png" alt="Funda Premium">
+      <h3>Funda Premium</h3>
+      <p>Protección y estilo en un solo accesorio.</p>
+      <a class="btn" href="#">Ver más</a>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/300x200?text=Cargador+Rápido" alt="Cargador Rápido">
+      <h3>Cargador Rápido</h3>
+      <p>Carga tu dispositivo hasta 3x más rápido.</p>
+      <a class="btn" href="#">Ver más</a>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/300x200?text=Auriculares+Bluetooth" alt="Auriculares Bluetooth">
+      <h3>Auriculares Bluetooth</h3>
+      <p>Audio nítido y conexión estable.</p>
+      <a class="btn" href="#">Ver más</a>
+    </div>
+  </section>
+  
+   <section id="contacto" class="contacto" style="background: #1a1a1d; padding: 5rem 5; text-align: center;">
+  <h2 style="color: white; margin-bottom: 1.5rem;">Síguenos en redes sociales</h2>
+            <a href="https://www.facebook.com" target="_blank" title="Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com" target="_blank" title="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://www.tiktok.com" target="_blank" title="TikTok">
+                <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="https://www.whatsapp.com" target="_blank" title="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+    <p>© 2025 Villatoro Accesorio. Todos los derechos reservados.</p>
+
+  <script>
+    // Ejemplo JS simple para una futura expansión
+    console.log("Sitio Villatoro Accesorio cargado correctamente.");
+  </script>
+
+</body>
+</html>
